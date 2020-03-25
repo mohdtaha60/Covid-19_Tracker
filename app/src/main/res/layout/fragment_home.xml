@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.home.HomeFragment">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        style="@style/TotalFontStyle"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"
+        android:text="Coronavirus Covid-19 \n Global Cases"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totalconfirmedlabel"
+        style="@style/LabelFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Total Confirmed"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totalconfirmed"
+        style="@style/TotalFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#E30000"
+        android:textAlignment="center"
+        tools:text="156730"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totaldeathlabel"
+        style="@style/LabelFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Total Death"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totaldeath"
+        style="@style/TotalFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#CDCDCD"
+        android:textAlignment="center"
+        tools:text="30730"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totalrecoveredlabel"
+        style="@style/LabelFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:text="Total Recovered"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/totalrecovered"
+        style="@style/TotalFontStyle"
+        android:layout_height="wrap_content"
+        android:textColor="#1DBF00"
+        android:textAlignment="center"
+        tools:text="56730"/>
+
+</LinearLayout>
+    <ProgressBar
+        android:layout_centerInParent="true"
+        android:id="@+id/progress_circular_home"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
